@@ -56,7 +56,7 @@ file_put_contents(\$file, 'false');}\n\
 }\n\
   http_response_code(201);\n\
 } else {\n\
-  http_response_code(201);}}\n\
+  http_response_code(500);}}\n\
 if(isset(\$_GET['status'])){\n\
 \$current = file_get_contents(\$file);\n\
 if(\$current == 'true'){  http_response_code(200);}else{http_response_code(201);}\n\
